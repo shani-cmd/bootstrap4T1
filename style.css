@@ -1,0 +1,329 @@
+*{
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    text-decoration: none;
+}
+html {
+                    
+                    scroll-behavior: smooth !important;
+}
+.bgimg1
+{
+                    background-image: url("pics/bg1.jpg");
+                    width: 100%;
+                    height: 100%;
+                    /* background-attachment: fixed; */
+                    background-repeat: no-repeat;
+                    background-size: cover;
+}
+.sidebar
+{
+  position: absolute; 
+  width: 70px; 
+  height: auto; 
+  left: 90%;
+  background-color: whitesmoke;
+  border: 2px solid black; 
+  border-radius: 10px;
+  top: 25%; 
+  position: fixed; 
+  line-height: 50px;
+  box-shadow: -10px 10px 10px black;
+  z-index: 1;
+}
+.s1
+{
+  border-bottom:1px solid red; 
+  border-top: 1px solid red;
+  width: 100%; 
+  cursor: pointer;
+}
+.logostyle
+{
+                    width: 100px;
+                    height: 60px;
+}
+.shani
+{
+                    /* color: aliceblue; */
+                    font-size: medium;
+                    font-weight: bold;
+                    text-decoration: none !important;
+                    list-style: none !important;
+}
+.d1
+{
+                    border:3px solid #6e63ff;
+                    background-color: rgba(250,250,250,0.01);
+                    color:white; 
+                    transition:all 0.4s ease-in-out; 
+                    border-radius: 15px;
+                    font-size: 30px;
+                    padding: 15px 20px;
+}
+.d1:hover{
+                    color: yellow;
+}
+.mrd
+{
+                    /* width: 100%; */
+                    /* height: auto; */
+                    margin-left:90px;
+                    margin-top:70px;
+                    margin-bottom: 60px;
+                    animation-delay: 1s;                 
+}
+.d2
+{
+                    border: 2px solid blueviolet;
+                    border-radius: 20px;
+                    margin-top: 100px;
+                    margin-bottom: 80px;
+                    margin-left: 90px;
+                    padding: 50px;
+}
+.shani:hover
+{
+                    color: yellow !important;
+                    border-bottom: 3px solid red;
+}
+.shani3 a.active
+{
+
+                    border-bottom: 3px solid red !important;
+}
+.bgimg2 
+{
+                    background-image: url("pics/play.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 100%;
+                    height: auto;
+}
+.whiteSpace
+{
+                    width: 100%;
+                    height: 120px;
+                    background: white;
+}
+.bgimg3
+{
+                    background-image: url("pics/connect.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 100%;
+                    height: auto;
+}
+.d3
+{
+                    font-size: 25px; 
+                    font-weight: bold;
+                    padding: 10px;
+                    color: antiquewhite;
+}
+.shani1
+{
+                    font-size: 20px;
+                    text-decoration: none !important;
+                    list-style: none !important;
+                    color: #898989;
+}
+.shani1:hover
+{
+                    color: yellow !important;
+                    transition: ease-in-out .2s;
+                    
+}
+.d3:hover
+{
+                    color: antiquewhite !important;
+}
+.d4
+{
+                    position: fixed; 
+                    bottom: 0; 
+                    right: 7%; 
+                    background-color: transparent; 
+                    border: 3px solid #cecece; 
+                    border-radius: 50%;
+}
+.d4:hover
+{
+                    background-color: blue !important;
+}
+.d4 i
+{
+  line-height: 20px; 
+  padding: 20px 23px; 
+  color: #cecece; 
+  font-size: larger;
+}
+.d5
+{
+                    font-size: 25px;
+                    font-weight: bold;
+                    padding: 10px;
+                    color: red !important;
+                    position: fixed !important;
+                    background-color: transparent;
+                    border: none;
+}
+/* The Modal (background) */
+.modal {
+                    display: none; /* Hidden by default */
+                    position: fixed; /* Stay in place */
+                    z-index: 1; /* Sit on top */
+                    padding-top: 100px; /* Location of the box */
+                    left: 0;
+                    top: 0;
+                    width: 100%; /* Full width */
+                    height: 100%; /* Full height */
+                    overflow: auto; /* Enable scroll if needed */
+                    background-color: rgb(0,0,0); /* Fallback color */
+                    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                  }
+                  
+                  /* Modal Content */
+                  .modal-content {
+                    position: relative;
+                    background-color: #fefefe;
+                    margin: auto;
+                    padding: 0;
+                    border: 1px solid #888;
+                    width: 80%;
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+                    -webkit-animation-name: animatetop;
+                    -webkit-animation-duration: 0.4s;
+                    animation-name: animatetop;
+                    animation-duration: 0.4s
+                  }
+                  
+                  /* Add Animation */
+                  @-webkit-keyframes animatetop {
+                    from {top:-300px; opacity:0} 
+                    to {top:0; opacity:1}
+                  }
+                  
+                  @keyframes animatetop {
+                    from {top:-300px; opacity:0}
+                    to {top:0; opacity:1}
+                  }
+                  
+                  /* The Close Button */
+                  .close {
+                    color: white;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
+                  }
+                  
+                  .close:hover,
+                  .close:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                  }
+                  
+                  .modal-header {
+                    padding: 2px 16px;
+                    background-color: #5cb85c;
+                    color: white;
+                    float: left;
+                  }
+                  
+                  .modal-body {padding: 2px 16px;}
+                  
+                  .modal-footer {
+                    padding: 2px 16px;
+                    background-color: #5cb85c;
+                    color: white;
+                    float: left;
+                  }
+                  /* model end here */
+
+                  .dropdown-toggle::after {
+                    transition: transform 0.15s linear;
+                    }
+                    
+                    .show.dropdown .dropdown-toggle::after {
+                    transform: translateY(3px);
+                    }
+/* search */
+* {
+  box-sizing: border-box;
+}
+
+.openBtn {
+  background: transparent;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.openBtn:hover {
+  background: transparent;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: relative;
+  top: 20px;
+  right: 45px;
+  font-size: 30px;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
